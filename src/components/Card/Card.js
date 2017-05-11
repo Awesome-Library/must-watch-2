@@ -12,7 +12,7 @@ let Card = (props) => {
           <img src={`${POST_PATH}/${poster}`}/>
         </figure>
       </div>
-      <div className="card-content">
+      <div className="card-content" style={{height: 200}}>
         <div className="media">
           <div className="media-content">
             <p className="title is-4">
@@ -24,8 +24,8 @@ let Card = (props) => {
         <div className="content">
           <div className="columns">
             <div className="column">
-              <p>
-                {overview}
+              <p style={{minHeight: 90}}>
+                {overview.slice(0, 70)} ...
               </p>
             </div>
           </div>
