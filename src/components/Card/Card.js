@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-const POST_PATH = 'https://image.tmdb.org/t/p/w400_and_h600_bestv2';
+import React from 'react';
 
 let Card = (props) => {
   let {title, overview, poster} = props;
@@ -9,7 +7,7 @@ let Card = (props) => {
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by2">
-          <img src={`${POST_PATH}/${poster}`}/>
+          <img src={poster} alt="" />
         </figure>
       </div>
       <div className="card-content" style={{height: 200}}>

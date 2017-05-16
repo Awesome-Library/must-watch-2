@@ -3,6 +3,7 @@ import Card from './components/Card/Card';
 import axios from 'axios';
 
 const ENDPOINT = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d47d9983ed993df5c93e49df5c8c1bc4';
+const POST_PATH = 'https://image.tmdb.org/t/p/w400_and_h600_bestv2';
 
 class Home extends Component {
   constructor() {
@@ -39,7 +40,7 @@ class Home extends Component {
               return (
                 <div key={index} className="column is-one-quarter">
                   <Card
-                    poster={poster_path}
+                    poster={`${POST_PATH}/${poster}`}
                     title={original_title}
                     overview={overview} />
                 </div>
