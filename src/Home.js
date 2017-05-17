@@ -40,7 +40,7 @@ class Home extends Component {
               return (
                 <div key={index} className="column is-one-quarter">
                   <Card
-                    poster={`${POST_PATH}/${poster}`}
+                    poster={`${POST_PATH}/${poster_path}`}
                     title={original_title}
                     overview={overview} />
                 </div>
