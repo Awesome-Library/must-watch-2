@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 let Card = (props) => {
   let {title, overview, poster} = props;
@@ -40,9 +41,9 @@ let Card = (props) => {
 }
 
 Card.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  overview: React.PropTypes.string.isRequired,
-  poster: React.PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  overview: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired
 };
 
 export default Card;

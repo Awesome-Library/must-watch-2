@@ -1,0 +1,57 @@
+exports[`test renders Card 1`] = `
+<div
+  className="card">
+  <div
+    className="card-image">
+    <figure
+      className="image is-4by2">
+      <img
+        alt=""
+        src="http://placehold.it/350x350" />
+    </figure>
+  </div>
+  <div
+    className="card-content"
+    style={
+      Object {
+        "height": 200,
+      }
+    }>
+    <div
+      className="media">
+      <div
+        className="media-content">
+        <p
+          className="title is-4">
+          pedilari
+        </p>
+      </div>
+    </div>
+    <div
+      className="content">
+      <div
+        className="columns">
+        <div
+          className="column">
+          <p
+            style={
+              Object {
+                "minHeight": 90,
+              }
+            }>
+            lorem ipsum dolor sit amet consecteur lorem
+             ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    className="card-footer">
+    <a
+      className="card-footer-item">
+      Adicionar a lista
+    </a>
+  </footer>
+</div>
+`;
