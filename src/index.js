@@ -17,7 +17,7 @@ const App = () => (
         <div className="container">
           <div className="nav-left">
             <Link to="/" className="nav-item">
-              <h1 className="title">must-do</h1>
+              <h1 className="title">must-watch</h1>
             </Link>
           </div>
           <div className="nav-right">
