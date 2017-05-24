@@ -1,39 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Home';
-import MyList from './MyList';
+import Header from './shared/Header';
+import Home from './pages/Home';
+import MyList from './pages/MyList';
 import 'bulma/css/bulma.css';
 
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 const App = () => (
   <Router>
     <div>
-      <nav className="nav has-shadow">
+      <Header/>
+
+      <section className="section">
         <div className="container">
-          <div className="nav-left">
-            <Link to="/" className="nav-item">
-              <h1 className="title">must-watch</h1>
-            </Link>
-          </div>
-          <div className="nav-right">
-            <Link to="/" className="nav-item is-tab">
-              início
-            </Link>
-
-            <Link to="/minha-lista" className="nav-item is-tab">
-              minha lista
-            </Link>
-          </div>
+          <Route exact path="/" component={Home}/>
+          <Route path="/minha-lista" component={MyList}/>
         </div>
-      </nav>
-
-      <Route exact path="/" component={Home}/>
-      <Route exact path="/minha-lista" component={MyList}/>
+      </section>
     </div>
   </Router>
 )
